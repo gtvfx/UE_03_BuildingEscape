@@ -26,4 +26,11 @@ private:
     float Reach = 100.f;
 	
     UPhysicsHandleComponent* PhysicsHandle = nullptr;
+    UInputComponent* InputComponent = nullptr;
+
+    // Raycast and grab the Actor in reach
+    void Grab();
+
+    // Called when Grab is released
+    void Release();
 };
