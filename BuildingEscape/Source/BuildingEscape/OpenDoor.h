@@ -36,7 +36,10 @@ private:
 
     float DoorLastOpenTime;
 
+    float TriggerMass = 40.f;
     
-    AActor* PressureTrigger; // Remember Pawn inherits from Actor
+    // AActor* PressureTrigger; // Remember Pawn inherits from Actor
     AActor* Owner; // Owning door
+
+    float GetTotalMassOfAcotorsOnPlate();
 };
